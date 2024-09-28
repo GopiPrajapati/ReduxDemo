@@ -55,7 +55,7 @@ const Input: FC<InputProps> = ({
       <View
         style={[
           styles.inputCon,
-          {borderColor: isFocus ? colors.black : colors.placeHolderColor},
+          {borderColor: isFocus ? colors.purple : colors.placeHolderColor},
           inputTextCon,
         ]}>
         {leftIcon ? leftIcon : null}
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
   input: {
     fontSize: hp(1.8),
     fontFamily: fonts.sueEllenFrancisco,
-    color: colors.focusedColor,
+    color: colors.black,
     textAlignVertical: 'center',
     paddingVertical: hp(1.4),
     paddingHorizontal: wp(2.5),
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   labelText: {
-    color: colors.labelColor,
+    color: colors.black,
     marginBottom: hp(0.8),
     fontSize: hp(1.7),
     fontFamily: fonts.sueEllenFrancisco,

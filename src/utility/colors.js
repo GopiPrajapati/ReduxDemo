@@ -100,6 +100,7 @@ export default {
   borderColorForNegativeButton: '#FF872740',
   backgroundColorForNegativeButton: '#FF872766',
   viewAnsColor: '#FF872730',
+  purple: '#593d88',
 };
 export const labelColors = {
   scheduled: '#0A6CC7',
