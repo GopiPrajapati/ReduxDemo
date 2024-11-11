@@ -27,6 +27,21 @@ const TodoDemo = () => {
   const dispatch = useDispatch();
   const [todoText, setTodoText] = useState('');
 
+  //  useEffect(() => {
+  //   // Custom headers and body data
+  //   const headers = {
+  //     Authorization: 'Bearer your-jwt-token',
+  //   };
+
+  //   const body = {
+  //     userId: 1,  // For example, you can include user info
+  //     title: 'New Todo Task',
+  //   };
+
+  //   // Dispatch the fetchTodos thunk with headers and body
+  //   dispatch(fetchTodos({ headers, body }));
+  // }, [dispatch]);
+
   const addTodoHandler = () => {
     dispatch(addTodo(todoText));
     setTodoText('');
