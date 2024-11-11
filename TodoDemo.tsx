@@ -21,8 +21,7 @@ import MText from './src/components/Text/MText';
 import colors from './src/utility/colors';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import {addTodo, removeTodo} from './src/feature/todo/todoSlice';
-import {store} from './src/app/store';
+import {addTodo, fetchTodos, removeTodo} from './src/feature/todo/todoSlice';
 
 const TodoDemo = () => {
   const dispatch = useDispatch();
@@ -46,8 +45,11 @@ const TodoDemo = () => {
     );
   };
 
+  const onFetchApiClicked = () => {
+    dispatch(fetchTodos());
+  };
+
   return (
-    // <Provider store={store}>
     <SafeAreaView style={styles.safeArea}>
       <View style={{flex: 1}}>
         <ScrollView
@@ -88,7 +90,7 @@ const TodoDemo = () => {
                             // marginHorizontal: wp(4),
                           }}
                           kind="medium">
-                          {item.item.text}
+                          {item.item.title}
                         </MText>
                         <TouchableOpacity
                           onPress={() => dispatch(removeTodo(item.item.id))}>
@@ -103,6 +105,11 @@ const TodoDemo = () => {
                 }}
               />
             </View>
+            <TouchableOpacity onPress={onFetchApiClicked}>
+              <MText style={styles.subTitle} kind="medium">
+                FetchTodoListAPI
+              </MText>
+            </TouchableOpacity>
           </View>
         </ScrollView>
       </View>
