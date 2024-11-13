@@ -42,6 +42,10 @@ const TodoDemo = () => {
   //   dispatch(fetchTodos({ headers, body }));
   // }, [dispatch]);
 
+  // const handleSearch = useDebounce((term: string) => {
+  //   // Perform search operation with the debounced term
+  //   fetchTeamLeaves(false, getFilterObject(term), 1, screen);
+  // }, 500);
   const addTodoHandler = () => {
     dispatch(addTodo(todoText));
     setTodoText('');
