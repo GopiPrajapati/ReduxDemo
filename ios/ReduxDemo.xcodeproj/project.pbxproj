@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* ReduxDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReduxDemoTests.m */; };
 		07BA895ADA3C4D71AE2B034D /* Rubik-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07C4471F3C3D47A983CB917C /* Rubik-SemiBoldItalic.ttf */; };
-		0C80B921A6F3F58F76C31292 /* libPods-ReduxDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-ReduxDemo.a */; };
 		11417B8B98D545809B6E63B5 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FBB77F827AE402891596A41 /* Rubik-SemiBold.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -19,16 +18,17 @@
 		4655F9CF097D4ECF92916C1A /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04CC55E3C5E74CFABB323554 /* Rubik-BoldItalic.ttf */; };
 		4E9F1232AFD24C9A812D92E1 /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84254D90E094401B996E5FEE /* Rubik-ExtraBold.ttf */; };
 		536FC447294448C2A102E395 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1860D847A844F18F363F13 /* Rubik-Light.ttf */; };
-		7699B88040F8A987B510C191 /* libPods-ReduxDemo-ReduxDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReduxDemo-ReduxDemoTests.a */; };
 		7D8C3F12144A485BB58F80B5 /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9162C064E6904A54B393F754 /* Rubik-BlackItalic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		89056FABD4184865AE265E39 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3BC9AFAFE86443886FACEA2 /* Rubik-MediumItalic.ttf */; };
 		99C9BCC32F724F5F88100D5E /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0896F2FE57F34B70824311FE /* Rubik-LightItalic.ttf */; };
 		A6B44ACEB0BD44E0940CC0A6 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5A64C5AB3324ABF8095672D /* Rubik-Italic.ttf */; };
+		B710AE4511F7D9900DC70504 /* libPods-ReduxDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6E14C4B696B77C45AE6D3C /* libPods-ReduxDemo.a */; };
 		B75E4E370AD2D1F1734C72B2 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 23DAA276C84F353A1D820C9D /* PrivacyInfo.xcprivacy */; };
 		BA9597658F9F4C6390293A9B /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D49D6B8083B64747A543566A /* Rubik-Medium.ttf */; };
 		F014A022D74348F594C07DD4 /* Rubik-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6027CBAD64F04813BD3D6DD0 /* Rubik-ExtraBoldItalic.ttf */; };
 		F7948088E1AC476F9294F198 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F83E2F56D488414AA3BBECCC /* Rubik-Regular.ttf */; };
+		F7EA1989859457608B4FB55D /* libPods-ReduxDemo-ReduxDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D74ED95F1EAA692E8EFC44 /* libPods-ReduxDemo-ReduxDemoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,23 +55,23 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReduxDemo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReduxDemo/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ReduxDemo/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReduxDemo-ReduxDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReduxDemo-ReduxDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DAA276C84F353A1D820C9D /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ReduxDemo/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-ReduxDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxDemo.debug.xcconfig"; path = "Target Support Files/Pods-ReduxDemo/Pods-ReduxDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-ReduxDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxDemo.release.xcconfig"; path = "Target Support Files/Pods-ReduxDemo/Pods-ReduxDemo.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-ReduxDemo-ReduxDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxDemo-ReduxDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-ReduxDemo-ReduxDemoTests/Pods-ReduxDemo-ReduxDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-ReduxDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReduxDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D74ED95F1EAA692E8EFC44 /* libPods-ReduxDemo-ReduxDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReduxDemo-ReduxDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		333650A9B3AA19268B4A31FD /* Pods-ReduxDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxDemo.debug.xcconfig"; path = "Target Support Files/Pods-ReduxDemo/Pods-ReduxDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6027CBAD64F04813BD3D6DD0 /* Rubik-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Rubik-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		6FBB77F827AE402891596A41 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-SemiBold.ttf"; path = "../src/assets/fonts/Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReduxDemo/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84254D90E094401B996E5FEE /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-ExtraBold.ttf"; path = "../src/assets/fonts/Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-ReduxDemo-ReduxDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxDemo-ReduxDemoTests.release.xcconfig"; path = "Target Support Files/Pods-ReduxDemo-ReduxDemoTests/Pods-ReduxDemo-ReduxDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A1860D847A844F18F363F13 /* Rubik-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Light.ttf"; path = "../src/assets/fonts/Rubik-Light.ttf"; sourceTree = "<group>"; };
+		8DC7E488965601FCDFDFF621 /* Pods-ReduxDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxDemo.release.xcconfig"; path = "Target Support Files/Pods-ReduxDemo/Pods-ReduxDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9162C064E6904A54B393F754 /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-BlackItalic.ttf"; path = "../src/assets/fonts/Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A2E5987445FCBA2C75FE94F0 /* Pods-ReduxDemo-ReduxDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxDemo-ReduxDemoTests.release.xcconfig"; path = "Target Support Files/Pods-ReduxDemo-ReduxDemoTests/Pods-ReduxDemo-ReduxDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D3BC9AFAFE86443886FACEA2 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-MediumItalic.ttf"; path = "../src/assets/fonts/Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
 		D49D6B8083B64747A543566A /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../src/assets/fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		DE1EA7A6976C4F4E83E649D1 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Bold.ttf"; path = "../src/assets/fonts/Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		DF6E14C4B696B77C45AE6D3C /* libPods-ReduxDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReduxDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A64C5AB3324ABF8095672D /* Rubik-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Italic.ttf"; path = "../src/assets/fonts/Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		EC423887FB9DBF5460E1E362 /* Pods-ReduxDemo-ReduxDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxDemo-ReduxDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-ReduxDemo-ReduxDemoTests/Pods-ReduxDemo-ReduxDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F4412800EDBE4F29BD04DDCE /* Rubik-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Black.ttf"; path = "../src/assets/fonts/Rubik-Black.ttf"; sourceTree = "<group>"; };
 		F83E2F56D488414AA3BBECCC /* Rubik-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Regular.ttf"; path = "../src/assets/fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-ReduxDemo-ReduxDemoTests.a in Frameworks */,
+				F7EA1989859457608B4FB55D /* libPods-ReduxDemo-ReduxDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-ReduxDemo.a in Frameworks */,
+				B710AE4511F7D9900DC70504 /* libPods-ReduxDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,8 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-ReduxDemo.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReduxDemo-ReduxDemoTests.a */,
+				DF6E14C4B696B77C45AE6D3C /* libPods-ReduxDemo.a */,
+				30D74ED95F1EAA692E8EFC44 /* libPods-ReduxDemo-ReduxDemoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,10 +195,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-ReduxDemo.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-ReduxDemo.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-ReduxDemo-ReduxDemoTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-ReduxDemo-ReduxDemoTests.release.xcconfig */,
+				333650A9B3AA19268B4A31FD /* Pods-ReduxDemo.debug.xcconfig */,
+				8DC7E488965601FCDFDFF621 /* Pods-ReduxDemo.release.xcconfig */,
+				EC423887FB9DBF5460E1E362 /* Pods-ReduxDemo-ReduxDemoTests.debug.xcconfig */,
+				A2E5987445FCBA2C75FE94F0 /* Pods-ReduxDemo-ReduxDemoTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -210,12 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReduxDemoTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				B2854F7148407B474206511C /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				B55D7A8099942CC3569C7BF9 /* [CP] Embed Pods Frameworks */,
+				790C7C2662E0FE4122E0BF8D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,13 +231,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReduxDemo" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				7ED7C1B88E459967A979D9A5 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				47E5E8D94063CFE81B5A6650 /* [CP] Embed Pods Frameworks */,
+				ED7829732D7CD0E3CFD5E048 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,7 +335,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		47E5E8D94063CFE81B5A6650 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,29 +352,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReduxDemo/Pods-ReduxDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		790C7C2662E0FE4122E0BF8D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReduxDemo-ReduxDemoTests/Pods-ReduxDemo-ReduxDemoTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReduxDemo-ReduxDemoTests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-ReduxDemo-ReduxDemoTests/Pods-ReduxDemo-ReduxDemoTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReduxDemo-ReduxDemoTests/Pods-ReduxDemo-ReduxDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		7ED7C1B88E459967A979D9A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -396,7 +391,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		B2854F7148407B474206511C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReduxDemo-ReduxDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B55D7A8099942CC3569C7BF9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -413,7 +430,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReduxDemo-ReduxDemoTests/Pods-ReduxDemo-ReduxDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		ED7829732D7CD0E3CFD5E048 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -428,23 +445,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReduxDemo/Pods-ReduxDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReduxDemo-ReduxDemoTests/Pods-ReduxDemo-ReduxDemoTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReduxDemo-ReduxDemoTests/Pods-ReduxDemo-ReduxDemoTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReduxDemo-ReduxDemoTests/Pods-ReduxDemo-ReduxDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -480,7 +480,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-ReduxDemo-ReduxDemoTests.debug.xcconfig */;
+			baseConfigurationReference = EC423887FB9DBF5460E1E362 /* Pods-ReduxDemo-ReduxDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -507,7 +507,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-ReduxDemo-ReduxDemoTests.release.xcconfig */;
+			baseConfigurationReference = A2E5987445FCBA2C75FE94F0 /* Pods-ReduxDemo-ReduxDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -531,7 +531,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-ReduxDemo.debug.xcconfig */;
+			baseConfigurationReference = 333650A9B3AA19268B4A31FD /* Pods-ReduxDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -561,7 +561,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-ReduxDemo.release.xcconfig */;
+			baseConfigurationReference = 8DC7E488965601FCDFDFF621 /* Pods-ReduxDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

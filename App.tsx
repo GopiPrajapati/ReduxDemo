@@ -1,14 +1,16 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import AppTwo from './TodoDemo';
-import {Provider} from 'react-redux';
-import {store} from './src/app/store';
+import TodoDemo from './src/navigation/stack/screens/TodoDemo';
+import Product from './src/navigation/stack/screens/Product';
+// import {Provider} from 'react-redux';
+// import {store} from './src/app/store';
 
 const App = () => {
   return (
-    <Provider store={store}>
-      <AppTwo />
-    </Provider>
+    // <Provider store={store}>
+    // <TodoDemo />
+    <Product />
+    // </Provider>
   );
 };
 
