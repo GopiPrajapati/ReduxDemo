@@ -1,35 +1,13 @@
 import {createAsyncThunk, createSlice, nanoid} from '@reduxjs/toolkit';
-import {createApi} from '@reduxjs/toolkit/query';
 
 const initialState = {
   todos: [{id: 1, title: 'Hello World'}],
 };
 
-// export const i = createApi({
-//   baseQuery:
-// })
-
 export const fetchTodos = createAsyncThunk('fetchTodos', async () => {
   const response = await fetch('https://jsonplaceholder.typicode.com/todos');
   return response.json();
 });
-
-// POST API DEMO
-// export const createTodo = createAsyncThunk('createTodo', async newTodo => {
-//   const response = await fetch('https://jsonplaceholder.typicode.com/todos', {
-//     method: 'POST', // Specify the method as POST
-//     headers: {
-//       'Content-Type': 'application/json', // Tell the server that we're sending JSON
-//     },
-//     body: JSON.stringify(newTodo), // Convert the newTodo object into a JSON string
-//   });
-
-//   if (!response.ok) {
-//     throw new Error('Failed to create todo');
-//   }
-
-//   return response.json(); // Parse the response JSON
-// });
 
 export const todoSlice = createSlice({
   name: 'todo',
