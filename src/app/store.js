@@ -1,6 +1,8 @@
 import {configureStore} from '@reduxjs/toolkit';
-import todoReducers from '../feature/todo/todoSlice';
+import gitUser from '../feature/github/githubUserSlice';
 
 export const store = configureStore({
-  reducer: todoReducers,
+  reducer: {
+    gitHubReducer: gitUser,
+  },
 });

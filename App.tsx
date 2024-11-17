@@ -1,13 +1,13 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import AppTwo from './TodoDemo';
 import {Provider} from 'react-redux';
+import GithuDemo from './src/screens/GithuDemo';
 import {store} from './src/app/store';
 
 const App = () => {
   return (
     <Provider store={store}>
-      <AppTwo />
+      <GithuDemo />
     </Provider>
   );
 };

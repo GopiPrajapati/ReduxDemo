@@ -1,73 +1,34 @@
-import React, {useState, useEffect} from 'react';
 import {
   FlatList,
-  LogBox,
-  Platform,
   SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
   TouchableOpacity,
   View,
-  YellowBox,
 } from 'react-native';
+import React, {FC, useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
+import {getAllData} from '../feature/github/githubUserSlice';
 import Input from './src/components/Input';
 import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
-import MText from './src/components/Text/MText';
-import colors from './src/utility/colors';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import {addTodo, fetchTodos, removeTodo} from './src/feature/todo/todoSlice';
+import MText from '../components/Text/MText';
+import colors from '../utility/colors';
 
-const TodoDemo = () => {
+const GithuDemo: FC = () => {
   const dispatch = useDispatch();
-  const [todoText, setTodoText] = useState('');
-
-  //  useEffect(() => {
-  //   // Custom headers and body data
-  //   const headers = {
-  //     Authorization: 'Bearer your-jwt-token',
-  //   };
-
-  //   const body = {
-  //     userId: 1,  // For example, you can include user info
-  //     title: 'New Todo Task',
-  //   };
-
-  //   // Dispatch the fetchTodos thunk with headers and body
-  //   dispatch(fetchTodos({ headers, body }));
-  // }, [dispatch]);
-
-  // const handleSearch = useDebounce((term: string) => {
-  //   // Perform search operation with the debounced term
-  //   fetchTeamLeaves(false, getFilterObject(term), 1, screen);
-  // }, 500);
-  const addTodoHandler = () => {
-    dispatch(addTodo(todoText));
-    setTodoText('');
-  };
-  const todos = useSelector(state => state?.todos);
+  const data = useSelector(state => state?.gitHubReducer);
 
   useEffect(() => {
-    LogBox.ignoreAllLogs();
+    dispatch(getAllData());
   }, []);
 
-  const rightIcon = () => {
-    return (
-      <TouchableOpacity style={styles.checkmarkCon} onPress={addTodoHandler}>
-        <Ionicons name="checkmark-sharp" style={styles.checkmark} />
-      </TouchableOpacity>
-    );
-  };
-
-  const onFetchApiClicked = () => {
-    dispatch(fetchTodos());
-  };
-
+  if (data.loading) {
+    return <View></View>;
+  }
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={{flex: 1}}>
@@ -80,23 +41,25 @@ const TodoDemo = () => {
           <View>
             <View style={styles.con}>
               <MText style={styles.title} kind="h2">
-                Todo
+                GitHub
               </MText>
             </View>
             <View style={{marginHorizontal: wp(4)}}>
-              <Input
+              {/* <Input
                 value={todoText}
                 hint="Enter Todo Note Here"
                 onChange={text => setTodoText(text)}
                 rightIcon={rightIcon()}
-              />
+              /> */}
             </View>
             <View style={{marginHorizontal: wp(4)}}>
-              <MText style={styles.subTitle} kind="h2">
-                Todo List
-              </MText>
+              <TouchableOpacity onPress={() => dispatch(getAllData())}>
+                <MText style={styles.subTitle} kind="h2">
+                  GitHub Users List
+                </MText>
+              </TouchableOpacity>
               <FlatList
-                data={todos}
+                data={data?.users}
                 renderItem={item => {
                   return (
                     <View style={styles.flatListCon}>
@@ -105,30 +68,23 @@ const TodoDemo = () => {
                           style={{
                             fontSize: hp(1.8),
                             textDecorationLine: 'underline',
-                            color: colors.white,
+                            color: colors.black,
                             // marginHorizontal: wp(4),
                           }}
                           kind="medium">
                           {item.item.title}
                         </MText>
-                        <TouchableOpacity
-                          onPress={() => dispatch(removeTodo(item.item.id))}>
-                          <MaterialCommunityIcons
-                            name="delete"
-                            style={{fontSize: hp(2.2), color: colors.black}}
-                          />
-                        </TouchableOpacity>
                       </View>
                     </View>
                   );
                 }}
               />
             </View>
-            <TouchableOpacity onPress={onFetchApiClicked}>
+            {/* <TouchableOpacity onPress={() => null}>
               <MText style={styles.subTitle} kind="medium">
                 FetchTodoListAPI
               </MText>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
           </View>
         </ScrollView>
       </View>
@@ -136,7 +92,7 @@ const TodoDemo = () => {
   );
 };
 
-export default TodoDemo;
+export default GithuDemo;
 
 const styles = StyleSheet.create({
   safeArea: {backgroundColor: colors.purple, flex: 1},
@@ -172,7 +128,7 @@ const styles = StyleSheet.create({
     paddingVertical: hp(1.5),
     paddingHorizontal: wp(4),
     backgroundColor: '#846fb070',
-    marginTop: hp(1),
+    marginVertical: hp(1),
     borderRadius: hp(1),
   },
   row: {
