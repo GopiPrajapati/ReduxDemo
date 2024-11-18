@@ -3,11 +3,12 @@ import React from 'react';
 import {Provider} from 'react-redux';
 import GithuDemo from './src/screens/GithuDemo';
 import {store} from './src/app/store';
+import CRUDDemo from './src/screens/CRUDDemo';
 
 const App = () => {
   return (
     <Provider store={store}>
-      <GithuDemo />
+      <CRUDDemo />
     </Provider>
   );
 };
