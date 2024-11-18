@@ -17,11 +17,14 @@ import {
 import MText from '../components/Text/MText';
 import colors from '../utility/colors';
 import Input from '../components/Input';
-import {createUser} from '../feature/userDetailsMock/userDetailsSlice';
+import {
+  createUser,
+  showUser,
+} from '../feature/userDetailsMock/userDetailsSlice';
 
 const CRUDDemo: FC = () => {
   const dispatch = useDispatch();
-  const [data, setData] = useState([]);
+  //   const [data, setData] = useState([]);
   const [name, setName] = useState('');
   const [id, setId] = useState('');
   const [number, setNumber] = useState('');
@@ -30,7 +33,13 @@ const CRUDDemo: FC = () => {
     dispatch(createUser({name: name, number: number, id: id}));
   };
 
-  //   useEffect(() => {}, []);
+  const data = useSelector(state => state.userDetails);
+
+  console.log('data', data);
+
+  useEffect(() => {
+    dispatch(showUser());
+  }, []);
 
   return (
     <SafeAreaView style={styles.safeArea}>
@@ -103,7 +112,7 @@ const CRUDDemo: FC = () => {
                             color: colors.black,
                           }}
                           kind="medium">
-                          {item.item.title}
+                          {item.item.name}
                         </MText>
                       </View>
                     </View>
