@@ -55,6 +55,16 @@ const userDetails = createSlice({
     users: [],
     loading: false,
     error: null,
+    name: undefined,
+    number: undefined,
+  },
+  reducers: {
+    addUserDetails: (state, action) => {
+      state.name = action.payload;
+    },
+    addUserNumber: (state, action) => {
+      state.number = action.payload;
+    },
   },
   extraReducers: builder => {
     builder.addCase(createUser.fulfilled, (state, action) => {
@@ -77,5 +87,7 @@ const userDetails = createSlice({
     });
   },
 });
+
+export const {addUserDetails, addUserNumber} = userDetails.actions;
 
 export default userDetails.reducer;
