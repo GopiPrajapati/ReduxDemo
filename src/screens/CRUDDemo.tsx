@@ -32,11 +32,26 @@ const CRUDDemo: FC = ({navigation}) => {
   const [id, setId] = useState('');
   const [number, setNumber] = useState('');
 
-  const handleSubmitPress = () => {
-    dispatch(createUser({name: name, number: number, id: id}));
-    // navigation?.navigate(screens.GithubDemo);
-  };
+  // const handleSubmitPress = async () => {
+  //   const response dispatch(createUser({name: name, number: number, id: id}).);
 
+  //   // navigation?.navigate(screens.GithubDemo);
+  // };
+  const handleSubmitPress = async () => {
+    try {
+      // Dispatch the createUser thunk and wait for it to resolve or reject
+      const result = await dispatch(createUser({name, number, id})).unwrap();
+
+      // If the API call is successful, clear the input fields
+      setName('');
+      setId('');
+      setNumber('');
+      console.log('User created successfully:', result);
+    } catch (error) {
+      // If the API call fails, log the error
+      console.log('Failed to create user:', error);
+    }
+  };
   const data = useSelector(state => state.userDetails);
 
   console.log('data', data);
