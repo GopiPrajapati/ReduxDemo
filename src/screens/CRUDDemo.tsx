@@ -2,6 +2,7 @@ import {
   FlatList,
   SafeAreaView,
   ScrollView,
+  StatusBar,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -43,6 +44,12 @@ const CRUDDemo: FC = () => {
 
   return (
     <SafeAreaView style={styles.safeArea}>
+      <StatusBar
+        hidden={false}
+        backgroundColor={colors.purple}
+        translucent={false}
+        barStyle={'light-content'}
+      />
       <View style={{flex: 1}}>
         <ScrollView
           keyboardShouldPersistTaps="handled"
