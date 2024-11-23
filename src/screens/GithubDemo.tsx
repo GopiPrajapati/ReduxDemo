@@ -19,7 +19,7 @@ import {
 import MText from '../components/Text/MText';
 import colors from '../utility/colors';
 
-const GithuDemo: FC = () => {
+const GithubDemo: FC = () => {
   const dispatch = useDispatch();
   const data = useSelector(state => state?.gitHubReducer);
 
@@ -99,7 +99,7 @@ const GithuDemo: FC = () => {
   );
 };
 
-export default GithuDemo;
+export default GithubDemo;
 
 const styles = StyleSheet.create({
   safeArea: {backgroundColor: colors.purple, flex: 1},

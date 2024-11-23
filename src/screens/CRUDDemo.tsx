@@ -22,9 +22,11 @@ import {
   createUser,
   showUser,
 } from '../feature/userDetailsMock/userDetailsSlice';
+import {screens} from '../utility/screens';
 
-const CRUDDemo: FC = () => {
+const CRUDDemo: FC = ({navigation}) => {
   const dispatch = useDispatch();
+
   //   const [data, setData] = useState([]);
   const [name, setName] = useState('');
   const [id, setId] = useState('');
@@ -32,6 +34,7 @@ const CRUDDemo: FC = () => {
 
   const handleSubmitPress = () => {
     dispatch(createUser({name: name, number: number, id: id}));
+    // navigation?.navigate(screens.GithubDemo);
   };
 
   const data = useSelector(state => state.userDetails);
