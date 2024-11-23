@@ -1,23 +1,52 @@
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
+import axios from 'axios';
+
+// API Calling using fetch
+
+// export const createUser = createAsyncThunk(
+//   'createUser',
+//   async (data, {rejectWithValue}) => {
+//     const response = await fetch(
+//       'https://673b228a339a4ce4451ac8b2.mockapi.io/gopi/api/AddNameNumber',
+//       {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify(data),
+//       },
+//     );
+
+//     try {
+//       const result = await response.json();
+//       console.log('result', result);
+//       return result;
+//     } catch (error) {
+//       console.log('error', error);
+//       return rejectWithValue(error);
+//     }
+//   },
+// );
+
+// API Calling using Axios
+
+const httpClient = axios.create({
+  baseURL: 'https://673b228a339a4ce4451ac8b2.mockapi.io/gopi/api/',
+});
 
 export const createUser = createAsyncThunk(
   'createUser',
   async (data, {rejectWithValue}) => {
-    const response = await fetch(
-      'https://673b228a339a4ce4451ac8b2.mockapi.io/gopi/api/AddNameNumber',
-      {
+    try {
+      const response = await httpClient({
+        url: 'https://673b228a339a4ce4451ac8b2.mockapi.io/gopi/api/AddNameNumber',
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(data),
-      },
-    );
-
-    try {
-      const result = await response.json();
-      console.log('result', result);
-      return result;
+        data: data,
+      });
+      return response.data;
     } catch (error) {
       console.log('error', error);
       return rejectWithValue(error);

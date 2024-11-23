@@ -14,8 +14,8 @@ const AuthStack: FC = () => {
     <Stack.Navigator screenOptions={{headerShown: false}}>
       {/* <Stack.Screen name={screens.CRUDDemo} component={CRUDDemo} /> */}
       {/* <Stack.Screen name={screens.GithubDemo} component={GithubDemo} /> */}
-      <Stack.Screen name="Screen1" component={Screen1} />
-      <Stack.Screen name="Screen2" component={Screen2} />
+      {/* <Stack.Screen name="Screen1" component={Screen1} /> */}
+      {/* <Stack.Screen name="Screen2" component={Screen2} /> */}
       <Stack.Screen name={screens.CRUDDemo} component={CRUDDemo} />
     </Stack.Navigator>
   );
