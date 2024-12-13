@@ -23,6 +23,7 @@ import {
   showUser,
 } from '../feature/userDetailsMock/userDetailsSlice';
 import {screens} from '../utility/screens';
+import ReducerComponent from '../components/ReducerComponent';
 
 const CRUDDemo: FC = ({navigation}) => {
   const dispatch = useDispatch();
@@ -93,6 +94,7 @@ const CRUDDemo: FC = ({navigation}) => {
               <MText style={styles.subTitle} kind="h2">
                 Enter Details
               </MText>
+              <ReducerComponent />
 
               <Input
                 hint={'Name'}
