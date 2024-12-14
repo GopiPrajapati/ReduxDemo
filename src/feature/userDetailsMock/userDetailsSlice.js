@@ -89,6 +89,34 @@ const userDetails = createSlice({
   },
   reducers: {
     addUserDetails: (state, action) => {
+      /* 
+      1. Vanilla(older) Redux => DON'T MUTATE STATE, returning was mandatory
+      We should not mutate state redux used to load about this on their website
+
+      const newState = [...state]
+      newState.items.push(action.payload)
+      return newState
+
+      Above line state that in older version
+      
+      2. Redux Toolkit
+      We have to mutate the state
+
+      Also react uses Immer Library to do this - so basically immer library is kind of finding between the original state the mutated state and then gives you back the new state which is immutable state which is new copy of a state,  
+      Redux toolkit uses immer BTS (Behind the scene)
+
+      state.items.push(action.payload)  // this is an impure function
+
+      */
+
+      /*
+      RTK - either mutate the state or return the new State
+
+      state.item.length = 0 // originalState = []
+      return { item : [] }  
+
+      */
+
       state.name = action.payload;
     },
     addUserNumber: (state, action) => {
