@@ -24,7 +24,7 @@ import {
 import {screens} from '../utility/screens';
 import ReducerComponent from '../components/ReducerComponent';
 
-const CRUDDemo: FC = ({navigation}) => {
+const CRUDDemoRTKQuery: FC = ({navigation}) => {
   const dispatch = useDispatch();
 
   //   const [data, setData] = useState([]);
@@ -81,19 +81,11 @@ const CRUDDemo: FC = ({navigation}) => {
                 CRUD
               </MText>
             </View>
-            <View style={{marginHorizontal: wp(4)}}>
-              {/* <Input
-                value={todoText}
-                hint="Enter Todo Note Here"
-                onChange={text => setTodoText(text)}
-                rightIcon={rightIcon()}
-              /> */}
-            </View>
+            <View style={{marginHorizontal: wp(4)}}></View>
             <View style={{marginHorizontal: wp(4)}}>
               <MText style={styles.subTitle} kind="h2">
                 Enter Details
               </MText>
-              <ReducerComponent />
 
               <Input
                 hint={'Name'}
@@ -146,11 +138,6 @@ const CRUDDemo: FC = ({navigation}) => {
                 }}
               />
             </View>
-            {/* <TouchableOpacity onPress={() => null}>
-              <MText style={styles.subTitle} kind="medium">
-                FetchTodoListAPI
-              </MText>
-            </TouchableOpacity> */}
           </View>
         </ScrollView>
       </View>
@@ -158,7 +145,7 @@ const CRUDDemo: FC = ({navigation}) => {
   );
 };
 
-export default CRUDDemo;
+export default CRUDDemoRTKQuery;
 
 const styles = StyleSheet.create({
   safeArea: {backgroundColor: colors.purple, flex: 1},
