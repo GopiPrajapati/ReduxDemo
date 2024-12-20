@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
   },
   input: {
     fontSize: hp(1.8),
-    fontFamily: fonts.sueEllenFrancisco,
+    fontFamily: fonts.rubikRegular,
     color: colors.black,
     textAlignVertical: 'center',
     paddingVertical: hp(1.4),
@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
     color: colors.black,
     marginBottom: hp(0.8),
     fontSize: hp(1.7),
-    fontFamily: fonts.sueEllenFrancisco,
+    fontFamily: fonts.rubikRegular,
   },
   error: {
     marginTop: hp(1.5),

@@ -23,6 +23,7 @@ import {
 } from '../feature/userDetailsMock/userDetailsSlice';
 import {screens} from '../utility/screens';
 import ReducerComponent from '../components/ReducerComponent';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const CRUDDemoRTKQuery: FC = ({navigation}) => {
   const dispatch = useDispatch();
@@ -120,6 +121,7 @@ const CRUDDemoRTKQuery: FC = ({navigation}) => {
               <FlatList
                 data={data?.users}
                 renderItem={item => {
+                  const {name} = item.item ?? {};
                   return (
                     <View style={styles.flatListCon}>
                       <View style={styles.row}>
@@ -130,8 +132,19 @@ const CRUDDemoRTKQuery: FC = ({navigation}) => {
                             color: colors.black,
                           }}
                           kind="medium">
-                          {item.item.name}
+                          {String(name).charAt(0).toUpperCase() +
+                            String(name).slice(1)}
                         </MText>
+                        <TouchableOpacity
+                          style={{
+                            paddingHorizontal: wp(1),
+                          }}>
+                          <MaterialCommunityIcons
+                            name="delete"
+                            style={{color: colors.black}}
+                            size={hp(3)}
+                          />
+                        </TouchableOpacity>
                       </View>
                     </View>
                   );
