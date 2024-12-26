@@ -19,7 +19,7 @@ import {
 import MText from '../components/Text/MText';
 import colors from '../utility/colors';
 
-const GithubDemo: FC = () => {
+const GithubDemo: FC = ({navigation}) => {
   const dispatch = useDispatch();
   const data = useSelector(state => state?.gitHubReducer);
 
@@ -46,11 +46,13 @@ const GithubDemo: FC = () => {
             backgroundColor: colors.white,
           }}>
           <View>
-            <View style={styles.con}>
+            <TouchableOpacity
+              style={styles.con}
+              onPress={() => navigation?.goBack()}>
               <MText style={styles.title} kind="h2">
                 GitHub
               </MText>
-            </View>
+            </TouchableOpacity>
             <View style={{marginHorizontal: wp(4)}}>
               {/* <Input
                 value={todoText}

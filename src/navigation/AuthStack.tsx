@@ -1,12 +1,9 @@
-import React, {FC} from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {screens} from '../utility/screens';
-import CRUDDemo from '../screens/CRUDDemo';
+import React, {FC} from 'react';
 import {StyleSheet} from 'react-native';
-import GithubDemo from '../screens/GithubDemo';
-import Screen1 from '../screens/threeScreens/Screen1';
-import Screen2 from '../screens/threeScreens/Screen2';
 import CRUDDemoRTKQuery from '../screens/CRUDDemoRTKQuery';
+import GithubDemo from '../screens/GithubDemo';
+import {screens} from '../utility/screens';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +20,7 @@ const AuthStack: FC = () => {
         name={screens.CRUDDemoRTKQuery}
         component={CRUDDemoRTKQuery}
       />
+      <Stack.Screen name={screens.GithubDemo} component={GithubDemo} />
     </Stack.Navigator>
   );
 };

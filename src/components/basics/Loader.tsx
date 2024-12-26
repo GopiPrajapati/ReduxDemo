@@ -11,7 +11,7 @@ const Loader: FC<LoaderProps> = ({isLoading}) =>
         Platform.OS == 'ios' ? {} : loaderStyles.modalView,
         loaderStyles.loaderStyle,
       ]}>
-      <ActivityIndicator size={'large'} color={colors.primary} />
+      <ActivityIndicator size={'large'} color={colors.black} />
     </View>
   ) : null;
 
