@@ -7,7 +7,7 @@ export const store = configureStore({
   reducer: {
     gitHubReducer: gitUser,
     userDetails: userDetails,
-    [userData.reducerPath]: userData.reducer,
+    [userData.reducerPath]: userData.reducer, // because of this I got access to the Data
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware().concat(userData.middleware),
