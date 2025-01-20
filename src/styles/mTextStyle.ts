@@ -65,3 +65,59 @@ export default StyleSheet.create({
         fontFamily: fonts.rubikMedium,
     }
 })
+
+
+
+requestCameraPermission = async () => {
+    if (Platform.OS === 'android') {
+      try {
+        const granted = await PermissionsAndroid.request(
+          PermissionsAndroid.PERMISSIONS.CAMERA,
+          // {
+          //   title: 'Camera Permission',
+          //   message: 'App needs camera permission to take photos',
+          //   buttonNeutral: 'Ask Me Later',
+          //   buttonNegative: 'Cancel',
+          //   buttonPositive: 'OK',
+          // },
+        );
+        if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+          console.log('You can use the camera');
+          return granted === PermissionsAndroid.RESULTS.GRANTED;
+        } else {
+          const val = await PermissionsAndroid.check(
+            PermissionsAndroid.PERMISSIONS.CAMERA,
+          ).then((result) => {
+            if (!result) {
+              Alert.alert(
+                'Permission Denied',
+                'Please enable camera access in your settings.',
+                [
+                  {text: 'Cancel', style: 'cancel'},
+                  {text: 'Settings', onPress: () => this.openSettings()},
+                ],
+              );
+              console.log('Camera permission denied');
+            }
+            console.log('permission result ', result);
+          });
+          // res
+          // Alert.alert(
+          //   'Permission Denied',
+          //   'Please enable camera access in your settings.',
+          //   [
+          //     {text: 'Cancel', style: 'cancel'},
+          //     {text: 'Settings', onPress: () => this.openSettings()},
+          //   ],
+          // );
+          // console.log('Camera permission denied');
+          return granted === PermissionsAndroid.RESULTS.GRANTED;
+        }
+      } catch (err) {
+        console.warn(err);
+        return false;
+      }
+    } else {
+      return true;
+    }
+  };
